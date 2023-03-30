@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arish Gym</title>
+</head>
+<style>
+  
+   
+
+    
+body{ 
+    color: black;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpg') ;
+       background-repeat: no-repeat; 
+    background-size: 1350px;
+    
+    
+    
+    }
+    
+.mid{
+    display: block;
+    margin:-149px auto;
+    /* border: 2px solid rgb(21, 255, 0); */
+    border-radius: 15px;
+    width: 32%;
+    padding: 2px 204px;
+}
+.right{ 
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    top:12px;
+    right: 10px;
+}
+.btn{
+    width: 20%;
+    margin: 1px 25px;
+    padding: 0px 10px;
+    background-color: #626060;
+    color: white;
+}
+.left img{
+    /* border: 2px solid red; */
+    width: 80px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 0px 30px;
+ } 
+ h3{
+    /* margin: 10px; */
+    /* border: 2px solid red; */
+    width: 100px;
+    padding: 0px 24px;
+    /* margin-left: 30px; */
+    text-align: center;
+    
+ }
+.navbar{
+    display: inline-block;
+     
+} 
+.navbar li{
+    display: inline-block; 
+    font-size: 25px;
+    margin: 5px;
+}
+.navbar li a{
+    font-size:xx-large;
+ text-decoration: underline;
+    font-style: bold;
+    color: #32c9cd;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+.form{ 
+    display: inline-block;
+    margin: 5px;
+    width: 10px;
+    padding: 4px 180px;
+position: relative;
+top: 52px;
+    left: 353px;
+
+}
+.form1{ 
+    display: inline-block;
+       margin: 5px;
+}
+.form2{ 
+    display: inline-block;
+    margin: 5px;
+}
+.form3{ 
+    display: inline-block;
+  margin: 5px;  
+}
+.form4{ 
+    display: inline-block;
+  margin: 5px;  
+}
+ Button{
+    margin-top: 212px;
+margin-left: 944px;
+width: 183px;
+border-radius: 5px;
+}
+.container h1{ 
+    color: #3de798;
+    display: inline-block;
+    margin: 20px;
+    padding: 18px 100px;
+    position:relative ;
+top: 190px;
+left: 395px;
+/* width: 50px; */
+}
+.captcha{
+    display: inline-block;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* margin-bottom: 20px; */
+    position: relative;
+top: 112px;
+left: 117px;}
+
+.captcha button {position: relative;
+    top: -18px;
+    margin-left: -17px;
+    border-radius: 20px;
+}
+#captcha{position: relative;
+    top: -37px;
+    left: 123px;
+    background-color: #32c9cd;
+    border-radius: 23px;
+}
+input[type="captcha"]
+{    position: relative;
+       top: 138px;
+    left: -62px;}
+ button[type="submit"]{
+    position: relative;
+        width: 182px;
+    top: -75px;
+    left:  -403px;}
+  
+</style>
+
+<body>
+    <header><div class="header">
+
+    <div class="left"><img src="logo.png.webp" alt=""><h1>Arish Gym</h1></div>
+    <div class="mid">
+<ul class="navbar">
+    <li><a href="#" class="active">Home</a>  </li>
+    <li> <a href="#"> About</a> </li>
+<li> <a href="#">Contact</a> </li>
+<li> <a href="#"> Help</a></li></ul>
+
+    </div>
+    <div class="right">
+<button class="btn">call us</button>
+<button class="btn">email us</button>
+    </div>
+</div>    
+</form>
+</header>  
+<div class="container">
+    <h1>Join the best gym</h1>
+    <form action="backend.php">
+        <div class="form"><div class="form1">
+            <input type="text" name="" placeholder=" Enter your Name">
+        </div>
+        <div class="form2">
+            <input type="text" name="" placeholder="enter your age">
+        </div>
+        <div class="form3">
+            <input type="text" name="" placeholder="Enter your city">
+        </div>
+        <div class="form4">
+            <input type="text" name="" placeholder="Enter your number">
+        </div> </div>
+        
+        <div class="captcha">
+            <span id="captcha"></span>
+            <button type="button" name="" onclick="generateCaptcha()">Generate New Code</button>
+        </div>
+        <input type="captcha" name="" placeholder="Enter Captcha Code" required>
+
+        <button type="submit" placeholder>submit</button>
+    </form>
+</div>
+    <script src="script.js"></script>
+
+    </body>
+</html>
